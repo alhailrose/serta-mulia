@@ -36,7 +36,7 @@ dotenv.config();
                 status: "fail",
                 message: response.message,
             });
-            newResponse.code(response.statusCode);
+            newResponse.code(response.output.statusCode);
             return newResponse;
         }
 
